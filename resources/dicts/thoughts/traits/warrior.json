@@ -554,5 +554,135 @@
         "Feels completely at peace with the way things are",
         "Has been coming up with complicated riddles for fun",
         "Instills their wisdom to some rowdy apprentices"        
+    ],
+    "sarcastic": [
+        "Makes an unnessary sarcastic comment towards another cat's appearance",
+        "Rolls their eyes as another cat talks about something they don't care about",
+        "Is mocking a poor cat for a mistake in a recent hunt",
+        "Knows that nobody can tell if they're being sarcastic or geniune",
+        "Always seems to have a witty comment for any situation",
+        "Can't seem to take anything seriously",
+        "Always seems to have a reply to everything",
+        "Is feeling proud of their sarcastic comment earlier",
+        "Always says it how it is, in the meanest way possible",
+        "Frowns as someone groans at their sarcastic comment... That's their thing!"
+    ],
+    "challenge-seeker": [
+        "Seems restless today",
+        "Is trying to be the first one to accomplish a difficult challenge",
+        "Challenges another cat with a confindent grin",
+        "Climbed up a tree and down it again for fun",
+        "Is proud of their many accomplishments!"
+    ],
+    "competitive": [
+        "Turned a hunting patrol into a competition",
+        "Turned a border patrol into a competition",
+        "Is boasting about winning a game of moss-ball",
+        "Absolutely will not settle for second place",
+        "Challenges another cat to a race",
+        "Proves once again that they are better at racing than everyone else"
+    ],
+    "blunt": [
+        "Says something totally insensitive and brutally honest",
+        "Doesn't seem to realise how much their words hurt others",
+        "Tells a younger cat the cold and hard truth",
+        "Is confused on why nobody likes them",
+        "Let a cat know how much they hate them"
+    ],
+    "considerate": [
+        "Constantly tells everyone that if they don't have anything nice to say, don't say it!",
+        "Recently offered to take a cat to the medicine den for their sore paw",
+        "Saw a cat enter the medicine den and is wondering if they are okay",
+        "Let a friend know how much they love them",
+        "Is proud to be a cat that others come to for help!",
+        "Making sure nobody judges prey by it's colour!"
+    ],
+    "optimistic": [
+        "Tells a sad cat to look on the bright side",
+        "Can always find the silver lining, somehow",
+        "Reminds yet another cat that every cloud has it's silver lining",
+        "Wakes up with a smile on their face!",
+        "Is greeting their clanmates with a polite purr",
+        "Is asking their friends if they're excited to go on patrol",
+        "Is feeling sad when their friend just won't cheer up"
+        "Wants to let other cats know the future is bright"
+    ],
+    "energetic": [
+        "Almost leapt out of their nest this morning!",
+        "Is excited to tell their friends how their day went",
+        "Doesn't find themselves to mind being compared to a kit all the time",
+        "Has a million things on their mind at once",
+        "Can't stop their tail from twitching!",
+        "Can't seem to sit still",
+        "Scared away a mouse because they moved too much!",
+        "Is urging to run, run, run!"
+    ],
+    "bland": [
+        "Isn't really thinking about much right now",
+        "Is blending into the background",
+        "Is confused as to why so many cats tend to ignore them",
+        "Feels as if they're overworking themselves",
+        "Offers to go on the dawn, sunhigh, and dusk patrols",
+        "Finds themselves with nothing to do... again",
+        "Drags themselves out of their nest to do all the same things again"
+    ],
+    "jerk": [
+        "Is bullying a cat who missed a mouse",
+        "Roughly shoves other cats out of their way",
+        "Loudly yowls about how another cat is mousebrained, embarrassing them",
+        "Makes yet another rude and uncalled for comment",
+        "Is laughing to themselves as they watch a cat get told off for something they did",
+        "Doesn't know why some cats don't like them"
+    ],
+    "soft-spoken": [
+        "Says something nobody else can hear",
+        "Doesn't know if nobody is listening or if they're just too quiet",
+        "Is afraid of voicing their opinions",
+        "Feels too overwhelmed"
+    ],
+    "dreamy": [
+        "Is talking in a strange, yet beautiful, way",
+        "Finds themselves lost in a daydream once again",
+        "Can't stop themselves from gazing off into the distance",
+        "Is singing the song of the birds",
+        "Seems to be lost in their own world",
+        "Announces that they love bird-watching!... When they should be bird-catching"
+    ],
+    "dramatic": [
+        "Saw a bug and shrieked, scaring off all the prey around them",
+        "Yowls about how sad their life is, and dramatically falls to the ground",
+        "Lets out a wail of sorrow, then acts like nothing happened",
+        "Got a really minor cut on their paw, and shrieked",
+        "Fainted because they saw blood... in the mouse they were eating"
+    ],
+    "wholesome": [
+        "Quietly lets a baby bird go free, while nobody is watching",
+        "Shyly accepts a compliment from their clanmate",
+        "Is feeling happy for no particular reason!",
+        "Cuddles with one of their best friends!",
+        "Purrs after seeing what a cute couple a pair of cats make"
+    ],
+    "romantic": [
+        "Makes a cat faint with a quick glance",
+        "Is feeling... flirty",
+        "Brings a clanmate a beautiful rose",
+        "Has proudly accepted approximately 42 compliments today",
+        "Is this moon's dreamboat!... And knows they'll be the next!"
+    ],
+    "imaginative": [
+        "Spent so long overthinking they accidentally made an entire story",
+        "Dreams so, so, vividly",
+        "Closes their eyes just to escape the stress of the world",
+        "Blows a simple scenario out of proportion by overthinking",
+        "Calms down by escaping into a fictional world in their mind"
+    ],
+    "timid": [
+        "Has not left their den today",
+        "Is huddling with a close friend in their nest",
+        "Seeks comfort from a friend",
+        "Doesn't want to do a border patrol",
+        "Feels too shy to talk to anyone today",
+        "Tucks their tail in-between their legs during a scary story"
+        "Almost gets scared by a mouse"
     ]
 }
