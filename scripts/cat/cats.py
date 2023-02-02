@@ -35,7 +35,7 @@ class Cat():
         'responsible', 'righteous', 'shameless', 'sneaky', 'strange', 'strict',
         'thoughtful', 'troublesome', 'vengeful', 'wise',
         # mine
-        'sarcastic', 'challenge-seeker', 'competitive', 'blunt', 'considerate',
+        'sarcastic', 'risk-seeker', 'competitive', 'blunt', 'considerate',
         'optimistic', 'energetic', 'bland', 'jerk', 'soft-spoken', 'dreamy',
         'dramatic', 'wholesome', 'romantic', 'imaginative', 'timid'
         
@@ -50,7 +50,7 @@ class Cat():
     personality_groups = {
         'Outgoing': ['adventurous', 'bold', 'charismatic', 'childish', 'confident', 'daring',
                         'playful', 'righteous', 'attention-seeker', 'bouncy', 'charming', 'noisy',
-                        'challenge-seeker','competitive', 'energetic', 'dramatic', 'romantic'],
+                        'risk-seeker','competitive', 'energetic', 'dramatic', 'romantic'],
         'Benevolent': ['altruistic', 'compassionate', 'empathetic', 'faithful', 'loving',
                         'patient', 'responsible', 'thoughtful', 'wise', 'inquisitive',
                         'polite', 'sweet', 'helpful', 'considerate', 'optimistic', 'wholesome'],
@@ -512,7 +512,7 @@ class Cat():
         # minor, cat will patrol
         grief_minor = [
             'daring', 'cold', 'bold', 'ambitious', 'bloodthirsty', 'responsible', 'loyal', 'strict', 'vengeful', 'jerk',
-            'sarcastic'
+            'sarcastic', 'optimistic'
         ]
 
         text = None
