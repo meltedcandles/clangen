@@ -925,7 +925,41 @@ class Cat():
             colour = 'sunlit ice'
         elif colour == 'greenyellow':
             colour = 'green-yellow'
+            # my eyes
+        elif colour == 'duskclouds':
+            colour = 'dusk clouds'
+        elif colour == 'darkvibrantgreen':
+            colour = 'dark vibrant green'
+        elif colour == 'vibrantgreen2':
+            colour = 'vibrant green'
+        elif colour == 'royalpurple':
+            colour = 'royal purple'
+        elif colour == 'vibrantgreen':
+            colour = 'vibrant green'
+        elif colour == 'pinkgrey':
+            colour = 'pink-grey'
+        elif colour == 'sunsetbeach':
+            colour = 'sunset beach'
+        elif colour == 'sugargrape':
+            colour = 'sugar grape'
         if self.eye_colour2 != None:
+            if colour2 == 'duskclouds':
+                colour2 = 'dusk clouds'
+            if colour2 == 'darkvibrantgreen':
+                colour2 = 'vibrant green'
+            if colour2 == 'vibrantgreen2':
+                colour2 = 'vibrant green'
+            if colour2 == 'royalpurple':
+                colour2 = 'royal purple'
+            if colour2 == 'vibrantgreen':
+                colour2 = 'vibrant green'
+            if colour2 == 'pinkgrey':
+                colour2 = 'pink-grey'
+            if colour2 == 'sunsetbeach':
+                colour2 = 'sunset beach'
+            if colour2 == 'sugargrape':
+                colour2 = 'sugargrape'
+                # reg eyes
             if colour2 == 'palegreen':
                 colour2 = 'pale green'
             if colour2 == 'darkblue':
