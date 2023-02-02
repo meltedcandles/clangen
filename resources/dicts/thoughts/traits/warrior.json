@@ -604,7 +604,7 @@
         "Wakes up with a smile on their face!",
         "Is greeting their clanmates with a polite purr",
         "Is asking their friends if they're excited to go on patrol",
-        "Is feeling sad when their friend just won't cheer up"
+        "Is feeling sad when their friend just won't cheer up",
         "Wants to let other cats know the future is bright"
     ],
     "energetic": [
@@ -682,7 +682,7 @@
         "Seeks comfort from a friend",
         "Doesn't want to do a border patrol",
         "Feels too shy to talk to anyone today",
-        "Tucks their tail in-between their legs during a scary story"
+        "Tucks their tail in-between their legs during a scary story",
         "Almost gets scared by a mouse"
     ]
 }
