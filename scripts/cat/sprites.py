@@ -318,20 +318,16 @@ for a, i in enumerate(
     sprites.make_group('eyesmeltextra', (a, 0), f'eyesmeltextra{i}', sprites_y=2)
 for a, i in enumerate(
         ['DARKVIBRANTGREEN', 'PINKGREY', 'SAND', 'AUTUMN', 'LEAF', 'SUNSETBEACH']):
-    sprites.make_group('eyes', (a, 1), f'eyes{i}')
-    sprites.make_group('eyesextra', (a, 1), f'eyesextra{i}', sprites_y=2)
-    sprites.make_group('eyes2', (a, 1), f'eyes2{i}')
-    sprites.make_group('eyes2extra', (a, 1), f'eyes2extra{i}', sprites_y=2)
+    sprites.make_group('eyesmelt', (a, 1), f'eyesmelt{i}')
+    sprites.make_group('eyesmeltextra', (a, 1), f'eyesmeltextra{i}', sprites_y=2)
 for a, i in enumerate(
         ['ROYALPURPLE', 'PLUM', 'VIBRANTGREEN2', 'GRASS', 'VIBRANTGREENRASPBERRY', 'VIBRANTGREENAUTUMN']):
-    sprites.make_group('eyes', (a, 2), f'eyes{i}')
-    sprites.make_group('eyesextra', (a, 2), f'eyesextra{i}', sprites_y=2)
-    sprites.make_group('eyes2', (a, 2), f'eyes2{i}')
-    sprites.make_group('eyes2extra', (a, 2), f'eyes2extra{i}', sprites_y=2)
+    sprites.make_group('eyesmelt', (a, 2), f'eyesmelt{i}')
+    sprites.make_group('eyesmeltextra', (a, 2), f'eyesmeltextra{i}', sprites_y=2)
 for a, i in enumerate(
         ['LIGHTBERRY', 'SUGARGRAPE', 'PINK']):
-    sprites.make_group('eyes', (a, 3), f'eyes{i}')
-    sprites.make_group('eyesextra', (a, 3), f'eyesextra{i}', sprites_y=2)
+    sprites.make_group('eyesmelt', (a, 3), f'eyesmelt{i}')
+    sprites.make_group('eyesmeltextra', (a, 3), f'eyesmeltextra{i}', sprites_y=2)
     
 # white patches
 for a, i in enumerate(['FULLWHITE', 'ANY', 'TUXEDO', 'LITTLE', 'COLOURPOINT', 'VAN', 'ANY2']):
