@@ -142,8 +142,9 @@
     "sarcastic": [
         "Rolls their eyes at an annoying patient"
     ],
-    "challenge-seeker": [
-        "Groans in the fact that sorting herbs is boring"
+    "risk-seeker": [
+        "Groans in the fact that sorting herbs is boring",
+        "Goes to a dangerous cliff to collect herbs"
     ],
     "competitive": [
         "Timed themselves sorting herbs, and aims to beat that time!"
