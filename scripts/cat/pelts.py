@@ -253,10 +253,14 @@ tortiecolours = ["SILVER", "GREY", "DARKGREY", "BLACK", "GHOST", "LIGHTBROWN", "
 
 pelt_length = ["short", "medium", "long"]
 eye_colours = ['YELLOW', 'AMBER', 'HAZEL', 'PALEGREEN', 'GREEN', 'BLUE', 'DARKBLUE', 'GREY', 'CYAN', 'EMERALD', 'PALEBLUE', 
-    'PALEYELLOW', 'GOLD', 'HEATHERBLUE', 'COPPER', 'SAGE', 'BLUE2', 'SUNLITICE', 'GREENYELLOW']
-yellow_eyes = ['YELLOW', 'AMBER', 'PALEYELLOW', 'GOLD', 'COPPER', 'GREENYELLOW']
-blue_eyes = ['BLUE', 'DARKBLUE', 'CYAN', 'PALEBLUE', 'HEATHERBLUE', 'BLUE2', 'SUNLITICE', 'GREY']
-green_eyes = ['PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL']
+    'PALEYELLOW', 'GOLD', 'HEATHERBLUE', 'COPPER', 'SAGE', 'BLUE2', 'SUNLITICE', 'GREENYELLOW', 'RASPBERRY', 'GRAPE',
+    'DUSKCLOUDS', 'SUNRISE', 'STRAWBERRY', 'VIBRANTGREEN', 'DARKVIBRANTGREEN', 'PINKGREY', 'SAND', 'AUTUMN', 'LEAF',
+    'SUNSETBEACH', 'ROYALPURPLE', 'PLUM', 'VIBRANTGREEN2', 'GRASS', 'LIGHTBERRY', 'SUGARGRAPE', 'PINK']
+yellow_eyes = ['YELLOW', 'AMBER', 'PALEYELLOW', 'GOLD', 'COPPER', 'GREENYELLOW', 'STRAWBERRY', 'SAND', 'AUTUMN', 'SUNSETBEACH']
+# purple and pink in blue eyes category for genetic reasons
+blue_eyes = ['BLUE', 'DARKBLUE', 'CYAN', 'PALEBLUE', 'HEATHERBLUE', 'BLUE2', 'SUNLITICE', 'GREY', 'RASPBERRY', 'GRAPE', 'DUSKCLOUDS',
+    'SUNRISE', 'PINKGREY', 'ROYALPURPLE', 'PLUM', 'LIGHTBERRY', 'SUGARGRAPE', 'PINK']
+green_eyes = ['PALEGREEN', 'GREEN', 'EMERALD', 'SAGE', 'HAZEL', 'VIBRANTGREEN', 'DARKVIBRANTGREEN', 'LEAF', 'VIBRANTGREEN2', 'GRASS']
 # scars1 is scars from other cats, other animals - scars2 is missing parts - scars3 is "special" scars that could only happen in a special event
 # bite scars by @wood pank on discord
 scars1 = ["ONE", "TWO", "THREE", "TAILSCAR", "SNOUT", "CHEEK", "SIDE", "THROAT", "TAILBASE", "BELLY",
