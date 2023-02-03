@@ -189,6 +189,25 @@ class Name():
         'BLUE2': ['Blue', 'Blue', 'Ice', 'Icy', 'Sky', 'Lake', 'Frost', 'Water'],
         'SUNLITICE': ['Sun', 'Ice', 'Icy', 'Frost', 'Sunrise', 'Dawn', 'Dusk', 'Odd', 'Glow'],
         'GREENYELLOW': ['Green', 'Yellow', 'Tawny', 'Hazel', 'Gold', 'Daisy', 'Sand', 'Sandy', 'Weed']
+        'RASPBERRY': ['Purple', 'Pink', 'Dawn', 'Dusk', 'Berry', 'Bright', 'Lavender']
+        'GRAPE': ['Purple', 'Lavender', 'Violet', 'Dusk', 'Flower', 'Berry', 'Grape', 'Shade']
+        'DUSKCLOUDS': ['Dusk', 'Grey', 'Lavender', 'Purple', 'Lilac', 'Petal', 'Flower']
+        'SUNRISE': ['Sweet', 'Berry', 'Pink', 'Pale', 'Soft', 'Flower', 'Dawn', 'Dusk']
+        'STRAWBERRY': ['Berry', 'Red', 'Strawberry', 'Rose', 'Flower', 'Pink', 'Dawn', 'Cinnamon', 'Odd']
+        'VIBRANTGREEN': ['Grass', 'Weed', 'Green', 'Holly', 'Leaf', 'Bright', 'Glow']
+        'DARKVIBRANTGREEN': ['Grass', 'Weed', 'Green', 'Holly', 'Leaf', 'Dark', 'Dim', 'Shade']
+        'PINKGREY': ['Grey', 'Stone', 'Silver', 'Ripple', 'Moon', 'Rain', 'Storm', 'Heather']
+        'SAND': ['Pale', 'Yellow', 'Sun', 'Gold', 'Ray', 'Gold', 'Golden', 'Sun', 'Amber', 'Sap', 'Honey', 'Sand']
+        'AUTUMN': ['Fall', 'Fallen', 'Red', 'Amber', 'Orange', 'Leaf', 'Dull', 'Dark']
+        'LEAF': ['Leaf', 'Grass', 'Weed', 'Green', 'Holly', 'Forest', 'Tree', 'Wood']
+        'SUNSETBEACH': ['Odd', 'Glimmer', 'Shimmer', 'Flower', 'Shine', 'Bright', 'Light', 'Dawn', 'Dusk']
+        'ROYALPURPLE': ['Purple', 'Deep', 'Dark', 'Water', 'Abyss', 'Sea', 'Ocean', 'Night']
+        'PLUM': ['Dark', 'Pink', 'Flower', 'Petal', 'Dim', 'Shade', 'Dusk', 'Heather', 'Wisteria']
+        'VIBRANTGREEN2': ['Leaf', 'Grass', 'Weed', 'Green', 'Holly', 'Forest', 'Tree', 'Wood']
+        'GRASS': ['Leaf', 'Grass', 'Weed', 'Green', 'Holly', 'Forest', 'Tree', 'Wood', 'Light', 'Glow', 'Bright']
+        'LIGHTBERRY': ['Berry', 'Light', 'Purple', 'Pale', 'Dusk', 'Pink', 'Flower', 'Sweet', 'Wisteria', 'Heather']
+        'SUGARGRAPE': ['Sweet', 'Purple', 'Dusk', 'Bright', 'Deep', 'Wisteria']
+        'PINK': ['Pink', 'Wisteria', 'Anemone', 'Foxglove', 'Lily', 'Hydrangea', 'Dahlia']
     }
 
     loner_names = [
