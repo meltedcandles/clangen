@@ -207,7 +207,7 @@ class Name():
         'GRASS': ['Leaf', 'Grass', 'Weed', 'Green', 'Holly', 'Forest', 'Tree', 'Wood', 'Light', 'Glow', 'Bright'],
         'LIGHTBERRY': ['Berry', 'Light', 'Purple', 'Pale', 'Dusk', 'Pink', 'Flower', 'Sweet', 'Wisteria', 'Heather'],
         'SUGARGRAPE': ['Sweet', 'Purple', 'Dusk', 'Bright', 'Deep', 'Wisteria'],
-        'PINK': ['Pink', 'Wisteria', 'Anemone', 'Foxglove', 'Lily', 'Hydrangea', 'Dahlia'],
+        'PINK': ['Pink', 'Wisteria', 'Anemone', 'Foxglove', 'Lily', 'Hydrangea', 'Dahlia']
     }
 
     loner_names = [
