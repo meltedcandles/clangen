@@ -117,58 +117,77 @@
         "Got in trouble for shirking their training the other day"
     ],
     "vengeful": [
-        "Snaps at another apprentice"
+        "Snaps at another apprentice",
+        "Glares at the other cats from afar"
     ],
     "wise": [
         "Is giving somber advice to a fellow apprentice",
         "Was sought out by another apprentice recently for their wisdom"
     ],
     "sarcastic": [
-        "Tells their unimpressed mentor a sarcastic joke"
+        "Tells their unimpressed mentor a sarcastic joke",
+        "Is still giggling about a creative sarcastic comment they made earlier"
     ],
     "risk-seeker": [
-        "Asks their mentor if their training can be extra-hard"
+        "Asks their mentor if their training can be extra-hard",
+        "Tries to convince their mentor to let them hunt near the thunderpath"
     ],
     "competitive": [
-        "Plans out a competition for all the apprentices, determined to win"
+        "Plans out a competition for all the apprentices, determined to win",
+        "Is feeling confident after beating all the other apprentices in a race"
     ],
     "blunt": [
-        "Tells their mentor they can't train today, but doesn't give a reason"
+        "Tells their mentor they can't train today, but doesn't give a reason",
+        "Is feeling far too mature for their mentor's silly jokes"
     ],
     "considerate": [
-        "Asks their mentor to double check that everyone is okay"
+        "Asks their mentor to double check that everyone is okay",
+        "Comforts another apprentice after they fail their assessment"
     ],
     "optimistic": [
-        "Is hopeful they'll finish training with flying colours!"
+        "Is hopeful they'll finish training with flying colours!",
+        "Is convinced they'll pass their asessment easily",
+        "Hopes their warrior name is meaningful and super unique"
     ],
     "energetic": [
-        "Asks their mentor to race them!"
+        "Asks their mentor to race them!",
+        "Can't sit still in their nest, to the dismay of the other apprentices"
     ],
     "bland": [
-        "Trains like everyone else, every single day"
+        "Trains like everyone else, every single day",
+        "Watches the other apprentices, jealous of how lively they seem"
     ],
     "jerk": [
-        "Makes another apprentice do their chores"
+        "Makes another apprentice do their chores",
+        "Almost pushes their mentor into mud, and laughs about it, despite their harsh punishment"
     ],
     "soft-spoken": [
-        "Is asked by their mentor to repeat something they said"
+        "Is asked by their mentor to repeat something they said",
+        "Whispers quietly, quieter than all the others"
     ],
     "dreamy": [
-        "Asks their mentor if they want to be a bird"
+        "Asks their mentor if they want to be a bird",
+        "Starts daydreaming in the middle of training"
     ],
     "dramatic": [
-        "Complains loudly about training"
+        "Complains loudly about training",
+        "Yowls about how much easier the medicine cats and mediators have it, causing many eyerolls"
     ],
     "wholesome": [
-        "Is remembering their first Gathering!"
+        "Is remembering their very first Gathering!",
+        "Giggles as they play mossball with their friends, just like they did as kits"
     ],
     "romantic": [
-        "Flirts with the other apprentices"
+        "Flirts with the other apprentices",
+        "Seems to enchant the other apprentices with only their looks",
+        "Easily convinces the other apprentices to do what they say"
     ],
     "imaginative": [
-        "Dreams about being a medicine cat apprentice instead"
+        "Dreams about being a medicine cat apprentice instead",
+        "Draws random shapes into the dirt with their claw"
     ],
     "timid": [
-        "Is too shy to meet the other apprentices"
+        "Is too shy to meet the other apprentices",
+        "Is huddling with their friend"
     ]
 }
