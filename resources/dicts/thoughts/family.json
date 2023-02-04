@@ -1,6 +1,6 @@
 {
     "has_children":[
-        "Is feeling proud of their children"
+        "Is feeling proud of their children",
         "Wonders if they're truly proud of their children"
     ],
     "has_young_children": {
@@ -18,7 +18,7 @@
         ]
     },
     "siblings":[
-        "Is hiding beetles in their siblings nest"
+        "Is hiding beetles in their siblings nest",
         "Is suddenly reminded that they haven't spoken with their sibling in awhile"
     ]
 }
