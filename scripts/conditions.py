@@ -1,5 +1,3 @@
-import math
-
 from scripts.game_structure.game_essentials import game
 
 
@@ -46,9 +44,9 @@ def medical_cats_condition_fulfilled(all_cats, amount_per_med, give_clanmembers_
 
 def get_amount_cat_for_one_medic(clan):
     """Returns """
-    amount = 15
+    amount = 10
     if clan and clan.game_mode == 'cruel season':
-        amount = 10
+        amount = 7
     return amount
 
 

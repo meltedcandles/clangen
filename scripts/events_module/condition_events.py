@@ -5,6 +5,7 @@ except ImportError:
 import random
 
 from scripts.cat.cats import Cat
+from scripts.cat.pelts import scars1, scars2, scars3
 from scripts.conditions import medical_cats_condition_fulfilled, get_amount_cat_for_one_medic
 from scripts.utility import event_text_adjust, get_med_cats, change_relationship_values
 from scripts.game_structure.game_essentials import game
@@ -47,7 +48,7 @@ class Condition_Events():
         # ---------------------------------------------------------------------------- #
         #                              make cats sick                                  #
         # ---------------------------------------------------------------------------- #
-        random_number = int(random.random() * 300)
+        random_number = int(random.random() * game.config["condition_related"][f"{game.clan.game_mode}_illness_chance"])
         if not cat.dead and not cat.is_ill() and random_number <= 10 and not event_string:
             season_dict = ILLNESSES_SEASON_LIST[season]
             possible_illnesses = []
@@ -93,10 +94,10 @@ class Condition_Events():
         Returns: boolean - if an event was triggered
         """
         has_other_clan = False
-
-        random_number = int(random.random() * 150)
+        other_clan = random.choice(game.clan.all_clans)
         triggered = False
         text = None
+        random_number = int(random.random() * game.config["condition_related"][f"{game.clan.game_mode}_injury_chance"])
 
         if cat.dead:
             triggered = True
@@ -105,7 +106,7 @@ class Condition_Events():
         involved_cats = [cat.ID]
 
         # handle if the current cat is already injured
-        if cat.is_injured():
+        if cat.is_injured() and game.clan.game_mode != 'classic':
             triggered, event_string = self.handle_already_injured(cat)
             text = event_string
         else:
@@ -130,70 +131,14 @@ class Condition_Events():
 
             if triggered:
                 possible_events = self.generate_events.possible_events(cat.status, cat.age, "injury")
-                final_events = []
+                final_events = self.generate_events.filter_possible_events(possible_events, cat, other_cat, war, enemy_clan, other_clan, alive_kits)
 
-                for event in possible_events:
-
-                    if event.injury in INJURIES:
-                        injury = INJURIES[event.injury]
-                        severity = injury['severity']
-                        if cat.status in INJURY_DISTRIBUTION:
-                            severity_chance = INJURY_DISTRIBUTION[cat.status][severity]
-                            if int(random.random() * severity_chance):
-                                continue
-
-                    if season not in event.tags:
-                        continue
-
-                    if other_cat:
-                        if "other_cat_leader" in event.tags and other_cat.status != "leader":
-                            continue
-                        if "other_cat_mentor" in event.tags and cat.mentor != other_cat.ID:
-                            continue
-                        if "other_cat_adult" in event.tags and other_cat.age in ["elder", "kitten"]:
-                            continue
-                        if "other_cat_kit" in event.tags and other_cat.age != 'kitten':
-                            continue
-
-                        if event.other_cat_trait is not None:
-                            if other_cat.trait not in event.other_cat_trait and int(random.random() * 10):
-                                continue
-
-                        if event.other_cat_skill is not None:
-                            if other_cat.skill not in event.other_cat_skill and int(random.random() * 10):
-                                continue
-
-                    else:
-                        if "other_cat" in event.tags:
-                            continue
-
-                    if "clan_kits" in event.tags and not alive_kits:
-                        continue
-
-                    if event.cat_trait is not None:
-                        if cat.trait not in event.cat_trait and int(random.random() * 10):
-                            continue
-
-                    if event.cat_skill is not None:
-                        if cat.skill not in event.cat_skill and int(random.random() * 10):
-                            continue
-
-                    if event.injury == 'mangled tail' and ('NOTAIL' in cat.scars or 'HALFTAIL' in cat.scars):
-                        continue
-
-                    if event.injury == 'torn ear' and 'NOEAR' in cat.scars:
-                        continue
-
-                    final_events.append(event)
-
-                other_clan = random.choice(game.clan.all_clans)
-                other_clan_name = f'{str(other_clan.name)}Clan'
-                enemy_clan = f'{str(enemy_clan)}'
-                current_lives = int(game.clan.leader_lives)
+                other_clan_name = f'{other_clan.name}Clan'
+                enemy_clan = f'{enemy_clan}'
 
                 if other_clan_name == 'None':
                     other_clan = game.clan.all_clans[0]
-                    other_clan_name = f'{str(other_clan.name)}Clan'
+                    other_clan_name = f'{other_clan.name}Clan'
 
                 if len(final_events) > 0:
                     injury_event = random.choice(final_events)
@@ -210,22 +155,36 @@ class Condition_Events():
 
                     text = event_text_adjust(Cat, injury_event.event_text, cat, other_cat, other_clan_name)
 
-                    # record proper history text possibilities
-                    if injury_event.history_text is not None:
-                        if injury_event.history_text[0] is not None:
-                            history_text = event_text_adjust(Cat, injury_event.history_text[0], cat, other_cat,
-                                                             other_clan_name, keep_m_c=True)
-                            cat.possible_scar = str(history_text)
-                        if injury_event.history_text[1] is not None and cat.status != "leader":
-                            history_text = event_text_adjust(Cat, injury_event.history_text[1], cat, other_cat,
-                                                             other_clan_name)
-                            cat.possible_death = str(history_text)
-                        elif injury_event.history_text[2] is not None and cat.status == "leader":
-                            history_text = event_text_adjust(Cat, injury_event.history_text[2], cat, other_cat,
-                                                             other_clan_name)
-                            cat.possible_death = str(history_text)
+                    if game.clan.game_mode == "classic":
+                        if "scar" in injury_event.tags and len(cat.scars) < 4:
+                            # add tagged scar
+                            for scar in scars1 + scars2 + scars3:
+                                if scar in injury_event.tags:
+                                    cat.scars.append(scar)
 
-                    cat.get_injured(injury_event.injury)
+                            # add scar history
+                            if injury_event.history_text is not None:
+                                if injury_event.history_text[0] is not None:
+                                    history_text = event_text_adjust(Cat, injury_event.history_text[0], cat, other_cat,
+                                                                     other_clan_name, keep_m_c=True)
+                                    cat.scar_event.append(str(history_text))
+                    else:
+                        # record proper history text possibilities
+                        if injury_event.history_text is not None:
+                            if injury_event.history_text[0] is not None:
+                                history_text = event_text_adjust(Cat, injury_event.history_text[0], cat, other_cat,
+                                                                 other_clan_name, keep_m_c=True)
+                                cat.possible_scar = str(history_text)
+                            if injury_event.history_text[1] is not None and cat.status != "leader":
+                                history_text = event_text_adjust(Cat, injury_event.history_text[1], cat, other_cat,
+                                                                 other_clan_name)
+                                cat.possible_death = str(history_text)
+                            elif injury_event.history_text[2] is not None and cat.status == "leader":
+                                history_text = event_text_adjust(Cat, injury_event.history_text[2], cat, other_cat,
+                                                                 other_clan_name)
+                                cat.possible_death = str(history_text)
+
+                        cat.get_injured(injury_event.injury)
 
         # just double-checking that trigger is only returned True if the cat is dead
         if cat.dead:
@@ -241,7 +200,6 @@ class Condition_Events():
             if has_other_clan:
                 types.append("other_clans")
             game.cur_events_list.append(Single_Event(text, types, involved_cats))
-
 
         return triggered
 
@@ -329,7 +287,7 @@ class Condition_Events():
             "BRIGHTHEART": ["one bad eye"],
             "NOLEFTEAR": ["partial hearing loss"],
             "NORIGHTEAR": ["partial hearing loss"],
-            "NOEAR": ["partial hearing loss, deaf"],
+            "NOEAR": ["partial hearing loss", "deaf"],
             "LEFTBLIND": ["one bad eye", "failing eyesight"],
             "RIGHTBLIND": ["one bad eye", "failing eyesight"],
             "BOTHBLIND": ["blind"],
@@ -677,7 +635,8 @@ class Condition_Events():
         }
 
         if not triggered and not cat.dead and not cat.retired and cat.status not in \
-                ['leader', 'medicine cat', 'kitten', 'medicine cat apprentice'] and game.settings['retirement'] is False:
+                ['leader', 'medicine cat', 'kitten', 'medicine cat apprentice', 'mediator', 'mediator apprentice'] \
+                and game.settings['retirement'] is False:
             for condition in cat.permanent_condition:
                 if cat.permanent_condition[condition]['severity'] == 'major':
                     chance = int(retire_chances.get(cat.age))
@@ -697,14 +656,14 @@ class Condition_Events():
                             event = f'{cat.name} has decided to retire from normal Clan duty.'
 
                         if cat.age == 'adolescent':
-                            event += f"They are given the name {cat.name.prefix}{cat.name.suffix} in honor " \
+                            event += f" They are given the name {cat.name.prefix}{cat.name.suffix} in honor " \
                                      f"of their contributions to {game.clan.name}Clan."
 
                         cat.retire_cat()
                         game.ranks_changed_timeskip = True
                         event_list.append(event)
 
-                if cat.permanent_condition[condition]['severity'] == 'severe':
+                elif cat.permanent_condition[condition]['severity'] == 'severe':
                     event_types.append('ceremony')
                     if game.clan.leader is not None:
                         if not game.clan.leader.dead and not game.clan.leader.exiled \
@@ -832,8 +791,7 @@ class Condition_Events():
         clan_herbs.update(game.clan.herbs.keys())
         needed_herbs.update(source[condition]["herbs"])
         herb_set = clan_herbs.intersection(needed_herbs)
-        usable_herbs = []
-        usable_herbs.extend(herb_set)
+        usable_herbs = list(herb_set)
 
         if not source[condition]["herbs"]:
             return
@@ -854,12 +812,22 @@ class Condition_Events():
 
             effect = random.choice(possible_effects)
 
-            # deplete the herb
             herb_used = usable_herbs[0]
-            if game.clan.herbs[herb_used] == 1:
-                amount_used = 1
-            else:
-                amount_used = random.randrange(1, game.clan.herbs[herb_used])
+            # Failsafe, since I have no idea why we are getting 0-herb entries.
+            while game.clan.herbs[herb_used] <= 0:
+                print(f"Warning: {herb_used} was chosen to use, although you currently have "
+                      f"{game.clan.herbs[herb_used]}. Removing {herb_used} from herb dict, finding a new herb...")
+                game.clan.herbs.pop(herb_used)
+                usable_herbs.pop(0)
+                if usable_herbs:
+                    herb_used = usable_herbs[0]
+                else:
+                    print("No herbs to use for this injury")
+                    return
+                print(f"New herb found: {herb_used}")
+
+            # deplete the herb
+            amount_used = 1
             game.clan.herbs[herb_used] -= amount_used
             if game.clan.herbs[herb_used] <= 0:
                 game.clan.herbs.pop(herb_used)
@@ -871,11 +839,15 @@ class Condition_Events():
                 if herb == herb_used:
                     break
             modifier = count
+            if cat.status in ['elder', 'kitten']:
+                modifier = modifier * 2
 
             effect_message = 'this should not show up'
             if effect == 'mortality':
                 effect_message = 'They will be less likely to die.'
                 conditions[condition]["mortality"] += 11 - modifier + int(amount_used * 1.5)
+                if conditions[condition]["mortality"] < 1:
+                    conditions[condition]["mortality"] = 1
             elif effect == 'duration':
                 effect_message = 'They will heal sooner.'
                 conditions[condition]["duration"] -= 1
@@ -925,9 +897,6 @@ with open(f"resources/dicts/conditions/illnesses_seasons.json", 'r') as read_fil
 INJURY_DISTRIBUTION = None
 with open(f"resources/dicts/conditions/event_injuries_distribution.json", 'r') as read_file:
     INJURY_DISTRIBUTION = ujson.loads(read_file.read())
-
-not_integrated_illness = ["redcough"]
-not_integrated_injuries = ["carrionplace disease"]
 
 # ---------------------------------------------------------------------------- #
 #                                   STRINGS                                    #
