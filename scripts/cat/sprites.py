@@ -239,17 +239,16 @@ sprites = Sprites(50)
 
 for x in [
     'lineart', 'singlecolours', 'speckledcolours', 'tabbycolours',
-    'whitepatches', 'blackwhitepatches', 'eyes', 'eyesmelt', 'singleextra', 'tabbyextra', 'eyes2', 'eyesmelt2',
-    'speckledextra', 'whiteextra', 'blackwhiteextra', 'eyesextra', 'eyesmeltextra', 'eyes2extra', 'skin', 'eyesmelt2extra',
-    'skinextra', 'scars', 'scarsextra', 'whitenewextra', 'blackwhitenewextra', 'whitepatchesnew', 'blackwhitepatchesnew',
-    'scarsdark', 'scarsdarkextra', 'collars', 'collarsextra',
+    'whitepatches', 'eyes', 'singleextra', 'tabbyextra', 'eyes2',
+    'speckledextra', 'whiteextra', 'eyesextra', 'eyes2extra', 'skin',
+    'skinextra', 'scars', 'scarsextra', 'whitenewextra', 'whitepatchesnew',
+    'scarsdark', 'scarsdarkextra', 'collars', 'collarsextra', 'nyloncollars', 'nyloncollarsextra',
     'bellcollars', 'bellcollarsextra', 'bowcollars', 'bowcollarsextra',
     'speckledcolours2', 'speckledextra2', 'tabbycolours2', 'tabbyextra2',
     'rosettecolours', 'rosetteextra', 'smokecolours', 'smokeextra', 'tickedcolours', 'tickedextra',
     'mackerelcolours', 'classiccolours', 'sokokecolours', 'agouticolours', 'singlestripecolours',
     'mackerelextra', 'classicextra', 'sokokeextra', 'agoutiextra', 'singlestripeextra',
-    'whitepatches3', 'blackwhitepatches3', 'whitepatches3extra', 'blackwhitepatches3extra', 'whitepatches4', 'blackwhitepatches4', 'whitepatches4extra',
-    'blackwhitepatches4extra',
+    'whitepatches3', 'whitepatches3extra', 'whitepatches4', 'whitepatches4extra',
     'Newscars', 'Newscarsextra', 'shadersnewwhite', 'lineartdead',
     'tortiecolourssolid', 'tortiecolourstabby', 'tortiecoloursbengal', 'tortiecoloursmarbled',
     'tortiecoloursticked', 'tortiecolourssmoke', 'tortiecoloursrosette', 'tortiecoloursspeckled',
@@ -257,7 +256,12 @@ for x in [
     'tortiesextrasolid', 'tortiesextratabby', 'tortiesextrabengal', 'tortiesextramarbled', 'tortiesextraticked',
     'tortiesextrasmoke', 'tortiesextrarosette', 'tortiesextraspeckled',
     'tortiesextramackerel', 'tortiesextraclassic', 'tortiesextrasokoke', 'tortiesextraagouti',
-    'medcatherbs', 'medcatherbsextra', 'lineartdf', 'eyes_df', 'eyesextra_df', 'lightingnew'
+    'medcatherbs', 'medcatherbsextra', 'lineartdf', 'eyes_df', 'eyesextra_df', 'lightingnew', 'fademask',
+    'fadestarclan', 'fadedarkforest'
+    
+    'eyesmelt', 'eyesmelt2', 'eyesmeltextra', 'eyesmelt2extra', 'blackwhitepatches3extra', 'blackwhitepatches4',
+    'blackwhitepatches4extra','blackwhitepatchesnew','blackwhitepatches', 'blackwhiteextra', 'blackwhitenewextra',
+    'blackwhitepatches3',
 
 ]:
     sprites.spritesheet(f"sprites/{x}.png", x)
@@ -409,13 +413,16 @@ for a, i in enumerate(['HEART', 'LILTWO', 'GLASS', 'MOORISH', 'SEPIAPOINT', 'MIN
     sprites.make_group('whitepatches4', (a, 1), 'white' + i)
     sprites.make_group('whitepatches4extra', (a, 1), 'whiteextra' + i, sprites_y=2)
 
-# beejeans black white patches
-for a, i in enumerate(['BLACKPANTS', 'BLACKREVERSEPANTS', 'BLACKSKUNK', 'BLACKKARPATI', 'BLACKHALFWHITE', 'BLACKAPPALOOSA', 'BLACKPIEBALD', 'BLACKCURVED']):
-    sprites.make_group('blackwhitepatches4', (a, 0), 'white' + i)
-    sprites.make_group('blackwhitepatches4extra', (a, 0), 'whiteextra' + i, sprites_y=2)
-for a, i in enumerate(['BLACKHEART', 'BLACKLILTWO', 'BLACKGLASS', 'BLACKMOORISH', 'WHITEPOINTMARK']):
-    sprites.make_group('blackwhitepatches4', (a, 1), 'white' + i)
-    sprites.make_group('blackwhitepatches4extra', (a, 1), 'whiteextra' + i, sprites_y=2)
+# beejeans white patches + perrio's point marks, painted, and heart2 + anju's new marks + key's blackstar
+for a, i in enumerate(['PANTS', 'REVERSEPANTS', 'SKUNK', 'KARPATI', 'HALFWHITE', 'APPALOOSA', 'PIEBALD', 'CURVED']):
+    sprites.make_group('whitepatches4', (a, 0), 'white' + i)
+    sprites.make_group('whitepatches4extra', (a, 0), 'whiteextra' + i, sprites_y=2)
+for a, i in enumerate(['HEART', 'LILTWO', 'GLASS', 'MOORISH', 'SEPIAPOINT', 'MINKPOINT', 'SEALPOINT']):
+    sprites.make_group('whitepatches4', (a, 1), 'white' + i)
+    sprites.make_group('whitepatches4extra', (a, 1), 'whiteextra' + i, sprites_y=2)
+for a, i in enumerate(['MAO', 'LUNA', 'CHESTSPECK', 'WINGS', 'PAINTED', 'HEART2', 'BLACKSTAR']):
+    sprites.make_group('whitepatches4', (a, 2), 'white' + i)
+    sprites.make_group('whitepatches4extra', (a, 2), 'whiteextra' + i, sprites_y=2)
     
 # single (solid)
 for a, i in enumerate(['WHITE', 'PALEGREY', 'SILVER', 'GREY', 'DARKGREY', 'GHOST']):
