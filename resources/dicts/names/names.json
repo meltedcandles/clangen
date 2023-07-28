@@ -46,7 +46,7 @@
     "carnassial", "trajectory", "topiary", "expedite", "fall headlong", "encircle", "concavity", "overseer", "aqua pura", "wavelet", 
     "gossamer", "murmuration", "withy", "mistral", "pennon", "ambition", "modicum", "wheech"
   ],
-  "epidermis_suffixes": {
+  "pelt_suffixes": {
     "TwoColour": ["naevus", "discoloration", "bedabble", "discoloraations", "aquatic bird"],
     "Tabby": ["stria", "plumule", "cotyledon", "stria", "gloaming"],
     "Marbled": ["stria", "plumule", "cotyledon", "stria", "gloaming"],
