@@ -21,7 +21,7 @@
     "yawp", "entangler", "chivy", "pursuant", "opening", "peritoneum", "gelid", "tweedle", "gnaw", "clinker", "scrimmage", "thunderhead", "trefoil",
     "crepitate", "sideswipe", "scrabble", "rivulet", "aigrette", "hullaballoo", "curlicue", "tidal motion", "bellis perennis", "boogie down",
     "bespeckle", "spurt", "hasten", "daybreak", "befuddlement", "stupefy", "condensation", "incubus", "gravitate", "mizzle", "molecule",
-    "dusk", "fragments", "accipitridae", "observance", "reverberation", "rudiment", "brand", "oculus", "oculi", "physiognomy",
+    "tenebrosity", "fragments", "accipitridae", "observance", "reverberation", "rudiment", "brand", "oculus", "oculi", "physiognomy",
     "falco", "decline", "clapperclaw", "pompon", "brushwood", "appendage", "incandescence", "gill-bearing animal", "desquamate", 
     "rapid oxidation", "explode", "coruscation", "besprinkle", "touch lightly", "quiver", "aeronautics", "capsize", "gambol", "inundation",
     "seepage", "floweret", "indiscretion", "brume", "vulpes", "suspension", "verglas", "apocarpous", "syncarpous", "distortion", "paroxysm",
@@ -35,7 +35,7 @@
     "namkeen", "eventide", "tweak", "pandemonium", "proboscis", "stimulate", "wackadoodle", "upholstery", "naevus", "esplanade",
     "pinnacle", "petaloid", "pinion", "reservoir", "lagoon", "papaveroideae", "ambush", "sashay", "spiculum", "quagmire",
     "burble", "projection", "oscillation", "precipitation", "accelerated", "corvid", "haulm", "mutilate", "bombora", "ascend", "influent", 
-    "arthropod", "tumult", "granule", "rhizome", "rosaceae", "reverberate", "backside", "scamper", "scamperer", "stampede", "susurrate",
+    "arthropod", "tumult", "granule", "rhizome", "rosaceae", "reverberate", "rear endside", "scamper", "scamperer", "stampede", "susurrate",
     "cicatrix", "lacerate", "caterwaul", "ovule", "aspirant", "transcend", "penumbra", "fragment", "caraapace", "coruscate", 
     "emit light", "palpitate", "consternation", "clamour", "observation", "thread", "cavort", "scamper", "atmosphere", "gash",
     "stumble", "fracture", "lash out at", "proboscis", "graupel", "take flight", "chirruping", "dynamism", "pinprick",
@@ -46,36 +46,36 @@
     "carnassial", "trajectory", "topiary", "expedite", "fall headlong", "encircle", "concavity", "overseer", "aqua pura", "wavelet", 
     "gossamer", "murmuration", "withy", "mistral", "pennon", "ambition", "modicum", "wheech"
   ],
-  "pelt_suffixes": {
-    "TwoColour": ["patch", "spot", "splash", "patch", "spots", "swan"],
-    "Tabby": ["stripe", "feather", "leaf", "stripe", "shade"],
-    "Marbled": ["stripe", "feather", "leaf", "stripe", "shade"],
-    "Speckled": ["dapple", "speckle", "spot", "speck", "freckle", "fleck"],
-    "Bengal": ["dapple", "speckle", "spots", "speck", "freckle", "fleck"],
-    "Tortie": ["dapple", "speckle", "spot", "dapple"],
-    "Rosette": ["dapple", "speckle", "spots", "dapple", "freckle", "fleck"],
-    "Calico": ["stripe", "dapple", "patch", "patch"],
-    "Smoke": ["fade", "dusk", "dawn", "smoke"],
-    "Ticked": ["spots", "pelt", "speckle", "freckle"],
-    "Mackerel": ["stripe", "feather", "leaf", "stripe", "fern"],
-    "Classic": ["stripe", "feather", "leaf", "stripe", "fern"],
-    "Sokoke": ["stripe", "feather", "leaf", "stripe", "fern"],
-    "Agouti": ["back", "pelt", "fur"],
-    "Singlestripe": ["stripe", "streak", "back", "shade", "stem", "shadow"]
+  "epidermis_suffixes": {
+    "TwoColour": ["naevus", "discoloration", "bedabble", "discoloraations", "aquatic bird"],
+    "Tabby": ["stria", "plumule", "cotyledon", "stria", "gloaming"],
+    "Marbled": ["stria", "plumule", "cotyledon", "stria", "gloaming"],
+    "Speckled": ["variegated", "stippled", "discoloration", "pinprick", "lentigo", "bespeckle"],
+    "Bengal": ["variegated", "stippled", "discolorations", "pinprick", "lentigo", "bespeckle"],
+    "Tortie": ["variegated", "stippled", "discoloration", "variegated"],
+    "Rosette": ["variegated", "stippled", "discolorations", "variegated", "lentigo", "bespeckle"],
+    "Calico": ["stria", "variegated", "naevus", "naevus"],
+    "Smoke": ["evanesce", "tenebrosity", "daybreak", "exhaust"],
+    "Ticked": ["discolorations", "epidermis", "stippled", "lentigo"],
+    "Mackerel": ["stria", "plumule", "cotyledon", "stria", "chaparral"],
+    "Classic": ["stria", "plumule", "cotyledon", "stria", "chaparral"],
+    "Sokoke": ["stria", "plumule", "cotyledon", "stria", "chaparral"],
+    "Agouti": ["rear end", "epidermis", "pelage"],
+    "Singlestripe": ["stria", "streak", "rear end", "gloaming", "peduncle", "penumbra"]
   },
   "tortie_pelt_suffixes": {
-    "solid": ["dapple", "speckle", "spots", "splash"],
-    "tabby": ["stripe", "feather", "leaf", "stripe", "shade", "fern"],
-    "bengal": ["dapple", "speckle", "spots", "speck", "fern", "freckle"],
-    "marbled": ["stripe", "feather", "leaf", "stripe", "shade", "fern"],
-    "ticked": ["spots", "pelt", "speckle", "freckle"],
-    "smoke": ["fade", "dusk", "dawn", "smoke"],
-    "rosette": ["dapple", "speckle", "spots", "dapple", "fern", "freckle"],
-    "speckled": ["dapple", "speckle", "spot", "speck", "freckle"],
-    "mackerel": ["stripe", "feather", "fern", "shade"],
-    "classic": ["stripe", "feather", "fern"],
-    "sokoke": ["stripe", "feather", "fern", "shade", "dapple"],
-    "agouti": ["back", "pelt", "fur", "dapple", "splash"]
+    "solid": ["variegated", "stippled", "discolorations", "bedapple"],
+    "tabby": ["stria", "plumule", "cotyledon", "stria", "gloaming", "chaparral"],
+    "bengal": ["variegated", "stippled", "discolorations", "pinprick", "chaparral", "lentigo"],
+    "marbled": ["stria", "plumule", "cotyledon", "stria", "gloaming", "chaparral"],
+    "ticked": ["discolorations", "epidermis", "stippled", "lentigo"],
+    "exhaust": ["evanesce", "tenebrosity", "daybreak", "exhaust"],
+    "rosette": ["variegated", "stippled", "discolorations", "variegated", "chaparral", "lentigo"],
+    "stippledd": ["variegated", "stippled", "discoloration", "pinprick", "lentigo"],
+    "mackerel": ["stria", "plumule", "chaparral", "gloaming"],
+    "classic": ["stria", "plumule", "chaparral"],
+    "sokoke": ["stria", "plumule", "chaparral", "gloaming", "variegated"],
+    "agouti": ["rear end", "epidermis", "pelage", "variegated", "bedapple"]
   },
 
   "normal_prefixes": [
@@ -87,7 +87,7 @@
     "Carnation", "Carp", "Caterpillar", "Cave", "Cedar", "Chaffinch", "Chasing", "Cherry", "Chervil", "Chestnut", "Chirp", "Chive",
     "Cicada", "Claw", "Clay", "Clear", "Cliff", "Clover", "Comfrey", "Condor", "Cone", "Conifer", "Conker", "Copse", "Cougar", 
     "Coyote", "Crag", "Crane", "Creek", "Cress", "Crest", "Crested", "Cricket", "Crooked", "Crouch", "Curl", "Curlew", "Curly", 
-    "Current", "Cypress", "Dahlia", "Daisy", "Dancing", "Dapple", "Dappled", "Dart", "Dash", "Dawn", "Dazzle", "Dew", "Dog", "Down", 
+    "Current", "Cypress", "Dahlia", "Daisy", "Dancing", "Variegated", "Variegatedd", "Dart", "Dash", "Dawn", "Dazzle", "Dew", "Dog", "Down", 
     "Downy", "Dream", "Drift", "Drizzle", "Droplet", "Dry", "Duck", "Dusk", "Eagle", "Echo", "Edelweiss", "Egret", "Elder", "Elm", 
     "Ermine", "Faith", "Falcon", "Fallen", "Falling", "Fallow", "Fawn", "Feather", "Fennel", "Fern", "Ferret", "Fickle", "Fidget", 
     "Fierce", "Fin", "Finch", "Fir", "Fish", "Flail", "Flash", "Flax", "Fleck", "Fleet", "Flicker", "Flight", "Flint", "Flip", 
@@ -109,7 +109,7 @@
     "Sharp", "Shell", "Shimmer", "Shine", "Shining", "Shivering", "Short", "Shrew", "Shrub", "Shy", "Silent", "Silk", "Silt", "Skip", 
     "Sky", "Slate", "Sleek", "Sleepy", "Sleet", "Slight", "Slip", "Sloe", "Slope", "Slumber", "Small", "Snail", "Snake", "Snap", 
     "Sneeze", "Snip", "Snowy", "Soft", "Song", "Sorrel", "Spark", "Sparrow", "Speckle", "Spider", "Spike", "Splash", "Splinter", 
-    "Spore", "Spot", "Spotted", "Spring", "Sprout", "Spruce", "Squirrel", "Starling", "Stem", "Stoat", "Stork", "Streak", "Stream", 
+    "Spore", "Discoloration", "Discolorationed", "Spring", "Sprout", "Spruce", "Squirrel", "Starling", "Stem", "Stoat", "Stork", "Streak", "Stream", 
     "Strike", "Stumpy", "Sunny", "Swallow", "Swamp", "Swarm", "Sweet", "Swift", "Sycamore", "Tadpole", "Tall", "Talon", "Tangle", 
     "Tansy", "Tawny", "Tempest", "Thistle", "Thorn", "Thrift", "Thrush", "Thunder", "Thyme", "Tiger", "Timber", "Tiny", "Toad", 
     "Torn", "Tremble", "Trickle", "Trout", "Tuft", "Tulip", "Tumble", "Turtle", "Valley", "Vine", "Vixen", "Wasp", "Weasel", "Web", 
@@ -256,11 +256,11 @@
 
   "biome_suffixes": {
     "Forest": [
-    "acorn", "antler", "beak", "branch", "clove", "cone", "dapple", "deer", "fawn", "fern", "fog", "frond", "grove", "moss", 
-    "sap", "shade", "twig", "wood", "thicket", "glade", "bear"
+    "acorn", "antler", "beak", "branch", "clove", "cone", "variegated", "deer", "fawn", "chaparral", "fog", "frond", "grove", "moss", 
+    "sap", "gloaming", "twig", "wood", "thicket", "glade", "bear"
     ],
     "Beach": [
-    "current", "shell", "tide", "sand", "wave", "flood", "shore", "coast", "fin", "splash", "surf", "squid", "coral", "pearl",
+    "current", "shell", "tide", "sand", "wave", "flood", "shore", "coast", "fin", "bedapple", "surf", "squid", "coral", "pearl",
     "pool", "ripple", "drip", "drop", "shine", "shimmer", "foam", "sea", "ocean", "torrent", "tide", "gill", "cove"
     ],
     "Plains": [
@@ -274,7 +274,7 @@
 
     ],
     "Wetlands": [
-    "flood", "swamp", "splash", "croak", "duck", "bog", "mud", "skipper", "wade", "lily", "moss", "root", "song", "bug", "glow",
+    "flood", "swamp", "bedapple", "croak", "duck", "bog", "mud", "skipper", "wade", "lily", "moss", "root", "song", "bug", "glow",
     "wave", "creek", "ripple", "turtle", "mire"
     ],
     "Desert": [
@@ -396,8 +396,8 @@
     "Siri", "Sirius", "Six Grains of Gravel", "Skimbleshanks", "Skittles", "Skitty", "Skrunkly", "Skylar", "Skyrim", "Slinky", "Sloane", "Sloth", "Slug", 
     "Slurpuff", "Slushie", "Smarty Pants", "Smile", "Smiley", "Smoke", "Smoky", "Smoothie", "Smores", "Sneakers", "Snek", "Snickers", "Snom", "Snook", "Snoots", "Snotlout", "Snowball", "Snowbell", "Snuttig", "Soap", "Soap Bubbles", "Soccer Ball", "Socks", "Soda Pop", "Sofa", "Sofanthiel", "Sofrito", 
     "Sol", "Soleil", "Sona", "Sonata", "Sonic", "Sonnet", "Sookie", "Sophie", "Sorbet", "Sotast", "Sox", "Spam", "Sparky", "Spatula", 
-    "Speedwell", "Spicy", "Spinach", "Spinel", "Spock", "Spoon", "Spore", "Spots", "Sprigatito", "Stan", "Stanley", "Star", "Stargazer", "Starfish", "Static", "Stella", "Steve", "Steven", "Stink Mink", "Stinkbutt", "Stinky", "Stitches", 
-    "Stolas", "Strawberry", "Stripes", "Stuffie", "Styx", "Subaru", "Sucrose", "Sueno", "Sugar", "Suhailah", "Summit", "Sundae", "Sunflower", "Sungrazer",
+    "Speedwell", "Spicy", "Spinach", "Spinel", "Spock", "Spoon", "Spore", "discolorations", "Sprigatito", "Stan", "Stanley", "Star", "Stargazer", "Starfish", "Static", "Stella", "Steve", "Steven", "Stink Mink", "Stinkbutt", "Stinky", "Stitches", 
+    "Stolas", "Strawberry", "Strias", "Stuffie", "Styx", "Subaru", "Sucrose", "Sueno", "Sugar", "Suhailah", "Summit", "Sundae", "Sunflower", "Sungrazer",
     "Sunny", "Sunset", "Survivor", "Sushi", "Suya", "Sweet Creature", "Sweet Leon", "Sweet Marmalade", "Sweet", "Sweetie", "Sybil", "Sylvana", "Sylveon", "Sylvester", "Tabasco", "Tabatha", 
     "Tabby", "Tabbytha", "Taco Bell", "Taco", "Taffy", "Tahini", "Tahir", "Taihu", "Talia", "Tamagotchi", "Tamale", "Tammy", 
     "Tangy", "Tantomile", "Tara", "Tasha", "Tater Tot", "Taurus", "Tay", "Tayo", "Tazama", "Teacup", "Teddie", "Teddy", "Tempest", "Terabyte", "Tesla", "Tesora", "Tetris", "Tetromino", "Teufel", "Theo", "Thoko", "Thor", "Thumbelina", 
