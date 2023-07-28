@@ -47,7 +47,8 @@
             "Is staring off into space",
             "Is picking the burrs from {PRONOUN/m_c/poss} pelt",
             "Is sharpening {PRONOUN/m_c/poss} claws",
-            "Woke up on the wrong side of the nest"
+            "Woke up on the wrong side of the nest",
+            "Makes a 'prrpt' noise as {PRONOUN/m_c/subject} {VERB/m_c/run/runs} up to {PRONOUN/m_c/poss} friend!"
         ],
         "main_status_constraint": [
             "apprentice",
